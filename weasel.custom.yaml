@@ -1,0 +1,136 @@
+patch:
+  # Update at: 2024.01.01
+  # 部分选项需要将 Weasel 更新至最新开发版才能生效
+  config_version: "2024.01.01"
+
+  # [app_options]
+  # 针对特定应用的设置
+  app_options:             # 设定应用默认关闭中文输入
+    cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+      ascii_mode: true     # 英文模式
+    everything.exe:
+      ascii_mode: true
+    putty.exe:
+      ascii_mode: true
+    sublime_text.exe:
+      ascii_mode: true
+    winscp.exe:
+      ascii_mode: true
+    wox.exe:
+      ascii_mode: true
+  # [End of <app_options>]
+
+  # [global settings]
+  show_notifications: false                  # 是否显示状态变化（方案内的开头 option ）的通知：true；false
+  # [End of <global settings>]
+
+  # [style]
+  # 字体；候选项、候选窗口的行为、布局及样式
+  style/color_scheme: win_light                   # 默认配色方案
+  style/color_scheme_dark: win_dark               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+
+  # 全局字体
+  # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
+  # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
+  style/font_face: "Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
+  style/label_font_face: "Microsoft YaHei"       # 标签字体
+  style/comment_font_face: "Microsoft YaHei"     # 注释字体
+  style/font_point: 12                           # 全局字体字号
+  style/label_font_point: 10                     # 标签字体字号，不设定 fallback 到 font_point
+  style/comment_font_point: 10                   # 注释字体字号，不设定 fallback 到 font_point
+
+  style/label_format: "%s."                      # 标签字符：例如 %s. 效果为 1. 2. 3. ....
+
+  style/layout/border_width: 1                   # 边框宽度；又名 border
+  style/layout/margin_x: 5                       # 主体元素和候选框的左右边距；为负值时，不显示候选框
+  style/layout/margin_y: 5                       # 主体元素的上下边距；为负值时，不显示候选框
+  style/layout/candidate_spacing: 5              # 候选项之间的间距
+  style/layout/hilite_spacing: 3                 # 候选项和相应标签的间距
+  style/layout/hilite_padding: 5                 # 高亮区域和内部文字的间距，影响高亮区域大小
+  style/layout/corner_radius: 5                  # 候选窗口圆角半径
+  style/layout/round_corner: 5                   # 候选背景色块圆角半径，又名 hilited_corner_radius
+  # [End of <style>]
+
+  # [preset_color_schemes]
+  # 配色设定
+  # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
+
+  # 小狼毫配色在线设计：
+  # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
+  # [润笔](https://pdog18.github.io/rime-soak/#/theme)
+
+  preset_color_schemes/so_young:
+    name: "致青春／So Young"
+    author: "五磅兔 <zcunlin@foxmail.com>"
+    candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+    # 背景设置
+    back_color: 0xE3F6FD                    # 窗口背景
+    border_color: 0xD5E8EE                  # 窗口边框
+    # 激活候选项
+    hilited_label_color: 0xC0D0AC           # 序号文字
+    hilited_candidate_text_color: 0xD5E8EE  # 候选文字
+    hilited_candidate_back_color: 0x98A12A  # 激活背景
+    # 其它候选项
+    label_color: 0xA1A193                   # 序号文字
+    candidate_text_color: 0x837B65          # 候选文字
+
+  preset_color_schemes/win_light:
+    name: "微软浅色"
+    author: ""
+    candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+    # 背景设置
+    back_color: 0xF4F4F4                    # 窗口背景
+    border_color: 0xDCDCDC                  # 窗口边框
+    # 激活候选项
+    hilited_label_color: 0x656565           # 序号文字
+    hilited_candidate_text_color: 0x000000  # 候选文字
+    hilited_candidate_back_color: 0xFFD8A6  # 激活背景
+    # 其它候选项
+    label_color: 0x868686                   # 序号文字
+    candidate_text_color: 0x545454          # 候选文字
+
+  preset_color_schemes/win_dark:
+    name: "微软深色"
+    author: ""
+    candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+    # 背景设置
+    back_color: 0x444444                    # 窗口背景
+    border_color: 0x666666                  # 窗口边框
+    # 激活候选项
+    hilited_label_color: 0xE8E8E8           # 序号文字
+    hilited_candidate_text_color: 0xFAFAFA  # 候选文字
+    hilited_candidate_back_color: 0xD8BF00  # 激活背景
+    # 其它候选项
+    label_color: 0x999999                   # 序号文字
+    candidate_text_color: 0xCCCCCC          # 候选文字
+
+  preset_color_schemes/wechat_light:
+    name: "微信键盘浅色"
+    author: ""
+    candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+    # 背景设置
+    back_color: 0xFFFFFF                    # 窗口背景
+    border_color: 0xDCDCDC                  # 窗口边框
+    # 激活候选项
+    hilited_label_color: 0xEEEEEE           # 序号文字
+    hilited_candidate_text_color: 0xFFFFFF  # 候选文字
+    hilited_candidate_back_color: 0x75B100  # 激活背景
+    # 其它候选项
+    label_color: 0x999999                   # 序号文字
+    candidate_text_color: 0x545454          # 候选文字
+
+  preset_color_schemes/wechat_dark:
+    name: "微信键盘深色"
+    author: ""
+    candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+    # 背景设置
+    back_color: 0x2E2925                    # 窗口背景
+    border_color: 0x444444                  # 窗口边框
+    # 激活候选项
+    hilited_label_color: 0xEEEEEE           # 序号文字
+    hilited_candidate_text_color: 0xFFFFFF  # 候选文字
+    hilited_candidate_back_color: 0x75B100  # 激活背景
+    # 其它候选项
+    label_color: 0x999999                   # 序号文字
+    candidate_text_color: 0xE9E9EA          # 候选文字
+  # [End of <preset_color_schemes>]

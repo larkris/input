@@ -1,0 +1,510 @@
+patch:
+  keyboards:
+    - name: "全键"
+      isPrimary: true
+      rows:
+        - keys:
+            - action: { character: { char: "q" } }
+              swipe:
+                - action: { symbol: { char: "1" } }
+                  direction: up
+                - action: { symbol: { char: "!" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "Q" } }
+                - action: { symbol: { char: "q" } }
+            - action: { character: { char: "w" } }
+              swipe:
+                - action: { symbol: { char: "2" } }
+                  direction: up
+                - action: { symbol: { char: "@" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "W" } }
+                - action: { symbol: { char: "w" } }
+            - action: { character: { char: "e" } }
+              swipe:
+                - action: { symbol: { char: "3" } }
+                  direction: up
+                - action: { symbol: { char: "#" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "E" } }
+                - action: { symbol: { char: "e" } }
+                - action: { symbol: { char: "ē" } }
+                - action: { symbol: { char: "é" } }
+                - action: { symbol: { char: "ě" } }
+                - action: { symbol: { char: "è" } }
+            - action: { character: { char: "r" } }
+              swipe:
+                - action: { symbol: { char: "4" } }
+                  direction: up
+                - action: { symbol: { char: "$" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "R" } }
+                - action: { symbol: { char: "r" } }
+            - action: { character: { char: "t" } }
+              swipe:
+                - action: { symbol: { char: "5" } }
+                  direction: up
+                - action: { symbol: { char: "%" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "T" } }
+                - action: { symbol: { char: "t" } }
+            - action: { character: { char: "y" } }
+              swipe:
+                - action: { symbol: { char: "6" } }
+                  direction: up
+                - action: { symbol: { char: "^" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "Y" } }
+                - action: { symbol: { char: "y" } }
+            - action: { character: { char: "u" } }
+              swipe:
+                - action: { symbol: { char: "7" } }
+                  direction: up
+                - action: { symbol: { char: "&" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "U" } }
+                - action: { symbol: { char: "u" } }
+                - action: { symbol: { char: "ù" } }
+                - action: { symbol: { char: "ǔ" } }
+                - action: { symbol: { char: "ú" } }
+                - action: { symbol: { char: "ū" } }
+            - action: { character: { char: "i" } }
+              swipe:
+                - action: { symbol: { char: "8" } }
+                  direction: up
+                - action: { symbol: { char: "*" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "I" } }
+                - action: { symbol: { char: "i" } }
+                - action: { symbol: { char: "ì" } }
+                - action: { symbol: { char: "ǐ" } }
+                - action: { symbol: { char: "í" } }
+                - action: { symbol: { char: "ī" } }
+            - action: { character: { char: "o" } }
+              swipe:
+                - action: { symbol: { char: "9" } }
+                  direction: up
+                - action: { symbol: { char: "(" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "O" } }
+                - action: { symbol: { char: "o" } }
+                - action: { symbol: { char: "ò" } }
+                - action: { symbol: { char: "ǒ" } }
+                - action: { symbol: { char: "ó" } }
+                - action: { symbol: { char: "ō" } }
+            - action: { character: { char: "p" } }
+              swipe:
+                - action: { symbol: { char: "0" } }
+                  direction: up
+                - action: { symbol: { char: ")" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "P" } }
+                - action: { symbol: { char: "p" } }
+        - keys:
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "a" } }
+              swipe:
+                - action: { shortcutCommand: "#全选" }
+                  direction: up
+                - action: { symbol: { char: "~" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "A" } }
+                - action: { symbol: { char: "a" } }
+                - action: { symbol: { char: "ā" } }
+                - action: { symbol: { char: "á" } }
+                - action: { symbol: { char: "ǎ" } }
+                - action: { symbol: { char: "à" } }
+            - action: { character: { char: "s" } }
+              swipe:
+                - action: { symbol: { char: "-" } }
+                  direction: up
+                - action: { symbol: { char: "_" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "S" } }
+                - action: { symbol: { char: "s" } }
+            - action: { character: { char: "d" } }
+              swipe:
+                - action: { symbol: { char: "=" } }
+                  direction: up
+                - action: { symbol: { char: "+" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "D" } }
+                - action: { symbol: { char: "d" } }
+            - action: { character: { char: "f" } }
+              swipe:
+                - action: { symbol: { char: "[" } }
+                  direction: up
+                - action: { symbol: { char: "{" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "F" } }
+                - action: { symbol: { char: "f" } }
+            - action: { character: { char: "g" } }
+              swipe:
+                - action: { symbol: { char: "]" } }
+                  direction: up
+                - action: { symbol: { char: "}" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "G" } }
+                - action: { symbol: { char: "g" } }
+            - action: { character: { char: "h" } }
+              swipe:
+                - action: { symbol: { char: '\' } }
+                  direction: up
+                - action: { symbol: { char: "|" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "H" } }
+                - action: { symbol: { char: "h" } }
+            - action: { character: { char: "j" } }
+              swipe:
+                - action: { symbol: { char: "/" } }
+                  direction: up
+                - action: { symbol: { char: "?" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "J" } }
+                - action: { symbol: { char: "j" } }
+            - action: { character: { char: "k" } }
+              swipe:
+                - action: { symbol: { char: ";" } }
+                  direction: up
+                - action: { symbol: { char: ":" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "K" } }
+                - action: { symbol: { char: "k" } }
+            - action: { character: { char: "l" } }
+              swipe:
+                - action: { symbol: { char: "'" } }
+                  direction: up
+                - action: { symbol: { char: '"' } }
+                  direction: down
+              callout:
+                - action: { character: { char: "L" } }
+                - action: { symbol: { char: "l" } }
+            - action: none
+              width: available
+              processByRIME: false
+        - keys:
+            - action: shift
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              swipe:
+                - action: { shortcutCommand: "#中英切换" }
+                  display: false
+                  direction: up
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "z" } }
+              swipe:
+                - action: { symbol: { char: "," } }
+                  direction: up
+                - action: { symbol: { char: "." } }
+                  direction: down
+              callout:
+                - action: { character: { char: "Z" } }
+                - action: { symbol: { char: "z" } }
+            - action: { character: { char: "x" } }
+              swipe:
+                - action: { shortcutCommand: "#剪切" }
+                  direction: up
+                - action: { symbol: { char: "<" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "X" } }
+                - action: { symbol: { char: "x" } }
+            - action: { character: { char: "c" } }
+              swipe:
+                - action: { shortcutCommand: "#复制" }
+                  direction: up
+                - action: { symbol: { char: ">" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "C" } }
+                - action: { symbol: { char: "c" } }
+            - action: { character: { char: "v" } }
+              swipe:
+                - action: { shortcutCommand: "#粘贴" }
+                  direction: up
+                - action: { symbol: { char: "？" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "V" } }
+                - action: { symbol: { char: "v" } }
+                - action: { symbol: { char: "ü" } }
+                - action: { symbol: { char: "ǖ" } }
+                - action: { symbol: { char: "ǘ" } }
+                - action: { symbol: { char: "ǚ" } }
+                - action: { symbol: { char: "ǜ" } }
+            - action: { character: { char: "b" } }
+              swipe:
+                - action: { symbol: { char: "、" } }
+                  direction: up
+                - action: { symbol: { char: "！" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "B" } }
+                - action: { symbol: { char: "b" } }
+            - action: { character: { char: "n" } }
+              swipe:
+                - action: { symbol: { char: "；" } }
+                  direction: up
+                - action: { symbol: { char: "：" } }
+                  direction: down
+              callout:
+                - action: { character: { char: "N" } }
+                - action: { symbol: { char: "n" } }
+            - action: { character: { char: "m" } }
+              swipe:
+                - action: { symbol: { char: "‘" } }
+                  label: "’"
+                  direction: up
+                - action: { symbol: { char: "“" } }
+                  label: "”"
+                  direction: down
+              callout:
+                - action: { character: { char: "M" } }
+                - action: { symbol: { char: "m" } }
+            - action: none
+              width: available
+              processByRIME: false
+            - action: backspace
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              swipe:
+                - action: { shortcutCommand: "#重输" }
+                  display: false
+                  direction: up
+                - action: { shortcutCommand: "#清空" }
+                  display: false
+                  direction: left
+        - keys:
+            - action: { keyboardType: "数字" }
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              label: "123"
+              swipe:
+                - action: { shortcutCommand: "#RimeSwitcher" }
+                  display: false
+                  direction: up
+            - action: { character: { char: "`" } }
+              swipe:
+                - action: { shortcutCommand: { sendKeys: { keys: "uU" } } }
+                  direction: up
+            - action: space
+              width: available
+              swipe:
+                - action: { shortcutCommand: "#次选上屏" }
+                  display: false
+                  direction: up
+            - action: comma
+              swipe:
+                - action: period
+                  direction: up
+            - action: enter
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              swipe:
+                - action: { shortcutCommand: "#换行" }
+                  display: false
+                  direction: up
+    - name: "数字"
+      rows:
+        - keys:
+            - action: { character: { char: "1" } }
+            - action: { character: { char: "2" } }
+            - action: { character: { char: "3" } }
+            - action: { character: { char: "4" } }
+            - action: { character: { char: "5" } }
+            - action: { character: { char: "6" } }
+            - action: { character: { char: "7" } }
+            - action: { character: { char: "8" } }
+            - action: { character: { char: "9" } }
+            - action: { character: { char: "0" } }
+        - keys:
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "-" } }
+            - action: { character: { char: "/" } }
+            - action: { character: { char: ":" } }
+            - action: { character: { char: ";" } }
+            - action: { character: { char: "(" } }
+            - action: { character: { char: ")" } }
+            - action: { character: { char: "$" } }
+            - action: { character: { char: "&" } }
+            - action: { character: { char: "@" } }
+            - action: none
+              width: available
+              processByRIME: false
+        - keys:
+            - action: { keyboardType: "符号" }
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              label: "#+="
+              swipe:
+                - action: { shortcutCommand: "#中英切换" }
+                  display: false
+                  direction: up
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "…" } }
+            - action: { character: { char: "." } }
+            - action: { character: { char: "," } }
+            - action: { character: { char: "、" } }
+            - action: { character: { char: "?" } }
+            - action: { character: { char: "!" } }
+            - action: { character: { char: '"' } }
+            - action: none
+              width: available
+              processByRIME: false
+            - action: backspace
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              swipe:
+                - action: { shortcutCommand: "#重输" }
+                  display: false
+                  direction: up
+                - action: { shortcutCommand: "#清空" }
+                  display: false
+                  direction: left
+        - keys:
+            - action: { keyboardType: "全键" }
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              label: "双拼"
+              swipe:
+                - action: { shortcutCommand: "#RimeSwitcher" }
+                  display: false
+                  direction: up
+            - action: { symbol: { char: "·" } }
+            - action: space
+              width: available
+              swipe:
+                - action: { shortcutCommand: "#次选上屏" }
+                  display: false
+                  direction: up
+            - action: { symbol: { char: "•" } }
+            - action: enter
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              swipe:
+                - action: { shortcutCommand: "#换行" }
+                  display: false
+                  direction: up
+    - name: "符号"
+      rows:
+        - keys:
+            - action: { character: { char: "[" } }
+            - action: { character: { char: "]" } }
+            - action: { character: { char: "{" } }
+            - action: { character: { char: "}" } }
+            - action: { character: { char: "#" } }
+            - action: { character: { char: "%" } }
+            - action: { character: { char: "^" } }
+            - action: { character: { char: "*" } }
+            - action: { character: { char: "+" } }
+            - action: { character: { char: "=" } }
+        - keys:
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "_" } }
+            - action: { character: { char: '\' } }
+            - action: { character: { char: "|" } }
+            - action: { character: { char: "~" } }
+            - action: { character: { char: "<" } }
+            - action: { character: { char: ">" } }
+            - action: { character: { char: "$" } }
+            - action: { symbol: { char: "€" } }
+            - action: { symbol: { char: "£" } }
+            - action: none
+              width: available
+              processByRIME: false
+        - keys:
+            - action: { keyboardType: "数字" }
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              label: "123"
+              swipe:
+                - action: { shortcutCommand: "#中英切换" }
+                  display: false
+                  direction: up
+            - action: none
+              width: available
+              processByRIME: false
+            - action: { character: { char: "…" } }
+            - action: { character: { char: "." } }
+            - action: { character: { char: "," } }
+            - action: { character: { char: "、" } }
+            - action: { character: { char: "?" } }
+            - action: { character: { char: "!" } }
+            - action: { character: { char: "'" } }
+            - action: none
+              width: available
+              processByRIME: false
+            - action: backspace
+              width:
+                portrait: { percentage: 0.125 }
+                landscape: { percentage: 0.13 }
+              swipe:
+                - action: { shortcutCommand: "#重输" }
+                  display: false
+                  direction: up
+                - action: { shortcutCommand: "#清空" }
+                  display: false
+                  direction: left
+        - keys:
+            - action: { keyboardType: "全键" }
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              label: "双拼"
+              swipe:
+                - action: { shortcutCommand: "#RimeSwitcher" }
+                  display: false
+                  direction: up
+            - action: { symbol: { char: "·" } }
+            - action: space
+              width: available
+              swipe:
+                - action: { shortcutCommand: "#次选上屏" }
+                  display: false
+                  direction: up
+            - action: { symbol: { char: "•" } }
+            - action: enter
+              width:
+                portrait: { percentage: 0.2 }
+                landscape: { percentage: 0.2 }
+              swipe:
+                - action: { shortcutCommand: "#换行" }
+                  display: false
+                  direction: up

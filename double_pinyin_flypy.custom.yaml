@@ -1,0 +1,156 @@
+patch:
+  # 置顶候选项
+  pin_cand_filter:
+    # 单编码
+    - a	啊
+    - b	吧 把 呗 百
+    - c	才 从
+    - d	的 地 得
+    - e	呃
+    - f	发 放 分
+    - g	个 各
+    - h	和 或
+    - j	及 将 即 既 继
+    - k	可
+    - l	了 啦 喽 嘞
+    - m	吗 嘛 呣 呒
+    - n	那 哪 拿 呐
+    - o	哦
+    - p	片 篇
+    - q	去 千
+    - r	让 人
+    - t	他 她 它
+    - u	是 时 使 式
+    - v	这
+    - w	我 万 往
+    - x	想 像 向
+    - y	与 于
+    - z	在 再 自
+    # 单字
+    - ba	把 吧
+    - bi	比
+    - bk	并
+    - bp	别
+    - bu	不
+    - bw	被
+    - cd	才
+    - cs	从
+    - dc	到 倒
+    - de	的 地 得
+    - dh	当
+    - dj	但
+    - dm	点
+    - dv	对
+    - dz	都
+    - en	嗯
+    - er	而 儿 二
+    - fa	发
+    - ge	个 各
+    - gh	刚
+    - hc	好
+    - hd	还
+    - he	和
+    - hg	哼
+    - ho	或
+    - hv	会
+    - iu	出
+    - ji	及 即 既
+    - jl	将
+    - jq	就
+    - kd	开
+    - ke	可
+    - kj	看
+    - la	啦 拉
+    - ld	来
+    - le	了
+    - li	里
+    - ma	吗 嘛 妈
+    - md	买 卖
+    - mw	没
+    - na	那 哪 拿 呐
+    - ni	你
+    - qk	请
+    - qu	去
+    - rg	仍 扔
+    - rh	让
+    - so	所
+    - ta	他 她 它
+    - td	太
+    - ts	同
+    - uh	上
+    - ui	是 时 使 式
+    - uo	说
+    - ve	这 着
+    - vf	真
+    - vg	正
+    - vi	只
+    - wo	我
+    - ww	为
+    - xk	行
+    - xl	想 像 向
+    - xm	先
+    - xx	下
+    - yc	要
+    - ye	也
+    - yi	一 以 已 亦
+    - yu	与 于
+    - yz	有 又 由
+    - zd	在 再
+    - ze	则
+    - zo	做 坐 左
+    - zv	最
+    # 词语
+    - bu vi d	不知道
+    - cd gh g	才刚刚
+    - dg d	等等
+    - gh g	刚刚
+    - ha h	哈哈
+    - ih i	常常
+    - kj k	看看
+    - mw uf m	没什么
+    - na b	那边 哪边
+    - na bm e	那边儿 哪边儿
+    - na e	那儿 哪儿
+    - na g	那个 哪个 拿个
+    - na l	那里 哪里
+    - na w	那位 哪位
+    - na x	那些 哪些
+    - ni m	你们
+    - rf m	人们
+    - so y	所以
+    - ta d	他的 她的 它的
+    - ta m	他们 她们 它们
+    - ta mf d	他们的 她们的 它们的
+    - uf m	什么
+    - uf me a	什么啊
+    - uf me d	什么的
+    - uf me u	什么是
+    - ui bu u	是不是
+    - ui yi g	是一个
+    - vi d	知道
+    - wh w	 往往
+    - wo m	我们
+    - ww uf m	为什么
+    - xl x	想想 想象
+    - yb w	因为
+    - yi g	一个
+    - yz g	有个
+    - yz mw y	有没有
+    - yz ui h	有时候
+    - yz y	又有
+    - yz yi g	有一个
+
+  # 主翻译器，拼音
+  translator/preedit_format: []  # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+
+  # 标点符号
+  punctuator/symbols/+:
+    # 度
+    'Vdu': [°, °C, °F]
+    'Vssd': [°C]
+    # π
+    'Vpd': [π]
+    'Vpi': [π]
+
+  # 部件拆字滤镜
+  radical_reverse_lookup/dictionary: single_pinyin  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典。将下载文件改名为 single_pinyin.reverse.bin 并拷贝至 build/ 目录，此处改为 single_pinyin 来为所有字显示拼音。下载地址：https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3

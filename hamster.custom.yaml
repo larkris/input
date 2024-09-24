@@ -1,0 +1,76 @@
+patch:
+  # 通用配置
+  # icloud同步过滤规则
+  general/regexOnCopyFile:
+    - "^.*[.]bin$"
+    - "^.*[.]userdb.*$"
+    - "^.*build.*$"
+    - "^.*SharedSupport.*$"
+
+  # 工具栏
+  # 是否显示候选文字 Comment 信息
+  toolbar/displayCommentOfCandidate: true
+
+  # 键盘相关配置
+  # 使用键盘类型:
+  # chinese: 中文26键
+  # chineseNineGrid: 中文九宫格
+  # 自定义键盘填写自定义键盘配置中的 name 的值。如: `useKeyboardType: 大千注音`
+  keyboard/useKeyboardType: 全键
+  # 启用按键声
+  keyboard/enableKeySounds: false
+  # 启用数字九宫格键盘
+  keyboard/enableNineGridOfNumericKeyboard: false
+  # Shift状态锁定
+  keyboard/lockShiftState: false
+  # 设置符号光标居中
+  keyboard/symbolsOfCursorBack/+:
+    - "{}"
+    - "()"
+    - "''"
+    - "‘’"
+  # 返回主键盘的符号
+  keyboard/symbolsOfReturnToMainKeyboard/+:
+    - "、"
+    - "？"
+    - "："
+    - "；"
+  # 成对上屏的符号
+  keyboard/pairsOfSymbols/+:
+    - "{}"
+    - '""'
+    - "''"
+    - "‘’"
+  # 空格按钮加载文字显示当前输入方案
+  keyboard/showCurrentInputSchemaNameOnLoadingTextForSpaceButton: true
+  # 中文26键显示大写字符
+  keyboard/showUppercasedCharacterOnChineseKeyboard: false
+  # 字体样式
+  keyboard/style/fontFace:
+    # 字体文件名
+    # 字体请放在 Rime/Fonts 目录中，此处只需要填写字体的文件名称
+    # 注意字体顺序，优先显示排序在前的字体，当显示的字符在字体中不存在时，则按顺序查找支持显示字符的字体
+    # - url: "LXGWWenKaiScreen.ttf"
+    # 字体名称可以用于引用系统已安装的字体，可通过以下网站查询字体名称
+    # https://github.com/lionhylra/iOS-UIFont-Names
+    - name: "PingFangSC-Regular"
+  # 配色方案
+  keyboard/colorSchemas:
+    # __include: hamster_color_schemas:/colorSchemas
+
+  # RIME 引擎相关配置
+  # RIME 重新部署时，是否覆盖词库文件
+  # 如果使用自造词，需要改为 false, 否则部署时会覆盖键盘自造词文件
+  rime/overrideDictFiles: false
+  rime/regexOnOverrideDictFiles:
+    - "^.*[.]userdb.*$"
+  rime/regexOnCopyAppGroupDictFile:
+    - "^.*[.]userdb.*$"
+
+  # 划动相关配置
+  swipe/keyboardSwipe:
+    # __include: hamster_swipe:/keyboardSwipe
+
+  # 自定义键盘布局
+  keyboards:
+    __include: hamster_keyboards:/keyboards
