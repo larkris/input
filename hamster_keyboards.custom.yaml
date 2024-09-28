@@ -116,7 +116,7 @@ patch:
               processByRIME: false
             - action: { character: { char: "a" } }
               swipe:
-                - action: { shortcutCommand: "#全选" }
+                - action: { shortcutCommand: "#selectText" }
                   direction: up
                 - action: { symbol: { char: "~" } }
                   direction: down
@@ -295,7 +295,7 @@ patch:
                 - action: { shortcutCommand: "#重输" }
                   display: false
                   direction: up
-                - action: { shortcutCommand: "#清空" }
+                - action: { shortcutCommand: "#deleteText" }
                   display: false
                   direction: left
         - keys:
@@ -390,7 +390,7 @@ patch:
                 - action: { shortcutCommand: "#重输" }
                   display: false
                   direction: up
-                - action: { shortcutCommand: "#清空" }
+                - action: { shortcutCommand: "#deleteText" }
                   display: false
                   direction: left
         - keys:
@@ -479,7 +479,7 @@ patch:
                 - action: { shortcutCommand: "#重输" }
                   display: false
                   direction: up
-                - action: { shortcutCommand: "#清空" }
+                - action: { shortcutCommand: "#deleteText" }
                   display: false
                   direction: left
         - keys:
