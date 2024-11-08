@@ -318,6 +318,9 @@ patch:
                 - action: { shortcutCommand: "#次选上屏" }
                   display: false
                   direction: up
+                - action: nextKeyboard
+                  display: false
+                  direction: down
             - action: comma
               swipe:
                 - action: period
@@ -410,6 +413,9 @@ patch:
                 - action: { shortcutCommand: "#次选上屏" }
                   display: false
                   direction: up
+                - action: nextKeyboard
+                  display: false
+                  direction: down
             - action: { symbol: { char: "•" } }
             - action: enter
               width:
@@ -499,6 +505,9 @@ patch:
                 - action: { shortcutCommand: "#次选上屏" }
                   display: false
                   direction: up
+                - action: nextKeyboard
+                  display: false
+                  direction: down
             - action: { symbol: { char: "•" } }
             - action: enter
               width:
