@@ -311,6 +311,7 @@ patch:
             - action: { character: { char: "`" } }
               swipe:
                 - action: { shortcutCommand: { sendKeys: { keys: "uU" } } }
+                  # label: "uU"
                   direction: up
             - action: space
               width: available
@@ -407,6 +408,10 @@ patch:
                   display: false
                   direction: up
             - action: { symbol: { char: "·" } }
+              swipe:
+                - action: { shortcutCommand: { sendKeys: { keys: "cC" } } }
+                  # label: "cC"
+                  direction: up
             - action: space
               width: available
               swipe:

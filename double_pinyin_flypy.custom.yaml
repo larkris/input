@@ -1,4 +1,8 @@
 patch:
+  # 输入引擎
+  engine/translators/+:
+    - lua_translator@calc_translator  # 计算器
+
   # 置顶候选项
   pin_cand_filter:
     # 单编码
@@ -154,3 +158,7 @@ patch:
 
   # 部件拆字滤镜
   radical_reverse_lookup/dictionary: single_pinyin  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典。将下载文件改名为 single_pinyin.reverse.bin 并拷贝至 build/ 目录，此处改为 single_pinyin 来为所有字显示拼音。下载地址：https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
+
+  # 处理符合特定规则的输入码，如网址、反查
+  recognizer/patterns/+:  # 再增加方案专有的：
+    calculator: "^cC.+"  # 脚本将自动获取第 2-3 个字符 cC 作为触发前缀，响应 lua_translator@calc_translator，计算器
