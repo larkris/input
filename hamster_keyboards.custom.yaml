@@ -408,7 +408,7 @@ patch:
               width:
                 portrait: { percentage: 0.2 }
                 landscape: { percentage: 0.2 }
-              label: "双拼"
+              label: "中文"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
                   display: false
@@ -503,7 +503,7 @@ patch:
               width:
                 portrait: { percentage: 0.2 }
                 landscape: { percentage: 0.2 }
-              label: "双拼"
+              label: "中文"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
                   display: false
@@ -586,7 +586,7 @@ patch:
         - keys:
             - action: { keyboardType: "全键" }
               width: available
-              label: "双拼"
+              label: "中文"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
                   display: false
