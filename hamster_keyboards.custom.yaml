@@ -211,6 +211,9 @@ patch:
                 - action: { shortcutCommand: "#中英切换" }
                   display: false
                   direction: up
+                - action: { keyboardType: "计算器" }
+                  display: false
+                  direction: right
             - action: none
               width: available
               processByRIME: false
@@ -373,6 +376,9 @@ patch:
                 - action: { shortcutCommand: "#中英切换" }
                   display: false
                   direction: up
+                - action: { keyboardType: "计算器" }
+                  display: false
+                  direction: right
             - action: none
               width: available
               processByRIME: false
@@ -408,10 +414,6 @@ patch:
                   display: false
                   direction: up
             - action: { symbol: { char: "·" } }
-              swipe:
-                - action: { shortcutCommand: { sendKeys: { keys: "cC" } } }
-                  # label: "cC"
-                  direction: up
             - action: space
               width: available
               swipe:
@@ -469,6 +471,9 @@ patch:
                 - action: { shortcutCommand: "#中英切换" }
                   display: false
                   direction: up
+                - action: { keyboardType: "计算器" }
+                  display: false
+                  direction: right
             - action: none
               width: available
               processByRIME: false
@@ -518,6 +523,93 @@ patch:
               width:
                 portrait: { percentage: 0.2 }
                 landscape: { percentage: 0.2 }
+              swipe:
+                - action: { shortcutCommand: "#换行" }
+                  display: false
+                  direction: up
+    - name: "计算器"
+      rows:
+        - keys:
+            - action: { character: { char: "+" } }
+              width:
+                percentage: 0.1
+            - action: { character: { char: "-" } }
+              width:
+                percentage: 0.1
+            - action: { character: { char: "1" } }
+              width: available
+            - action: { character: { char: "2" } }
+              width: available
+            - action: { character: { char: "3" } }
+              width: available
+            - action: { character: { char: "=" } }
+              width: available
+        - keys:
+            - action: { character: { char: "*" } }
+              width:
+                percentage: 0.1
+              label: "×"
+            - action: { character: { char: "/" } }
+              width:
+                percentage: 0.1
+              label: "÷"
+            - action: { character: { char: "4" } }
+              width: available
+            - action: { character: { char: "5" } }
+              width: available
+            - action: { character: { char: "6" } }
+              width: available
+            - action: { character: { char: ":" } }
+              width: available
+        - keys:
+            - action: { character: { char: "(" } }
+              width:
+                percentage: 0.1
+            - action: { character: { char: ")" } }
+              width:
+                percentage: 0.1
+            - action: { character: { char: "7" } }
+              width: available
+            - action: { character: { char: "8" } }
+              width: available
+            - action: { character: { char: "9" } }
+              width: available
+            - action: backspace
+              width: available
+              swipe:
+                - action: { shortcutCommand: "#重输" }
+                  display: false
+                  direction: up
+                - action: { shortcutCommand: "#deleteText" }
+                  display: false
+                  direction: left
+        - keys:
+            - action: { keyboardType: "全键" }
+              width: available
+              label: "双拼"
+              swipe:
+                - action: { shortcutCommand: "#RimeSwitcher" }
+                  display: false
+                  direction: up
+            - action: { character: { char: "." } }
+              width: available
+              swipe:
+                - action: { shortcutCommand: { sendKeys: { keys: "cC" } } }
+                  # label: "cC"
+                  direction: up
+            - action: { character: { char: "0" } }
+              width: available
+            - action: space
+              width: available
+              swipe:
+                - action: { shortcutCommand: "#次选上屏" }
+                  display: false
+                  direction: up
+                - action: nextKeyboard
+                  display: false
+                  direction: down
+            - action: enter
+              width: available
               swipe:
                 - action: { shortcutCommand: "#换行" }
                   display: false
