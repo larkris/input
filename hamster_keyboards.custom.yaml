@@ -303,9 +303,7 @@ patch:
                   direction: left
         - keys:
             - action: { keyboardType: "数字" }
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               label: "123"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
@@ -330,13 +328,12 @@ patch:
                 - action: period
                   direction: up
             - action: enter
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               swipe:
                 - action: { shortcutCommand: "#换行" }
                   display: false
                   direction: up
+      buttonInsets: { left: 3, right: 3, top: 8, bottom: 4 }
     - name: "数字"
       rows:
         - keys:
@@ -405,9 +402,7 @@ patch:
                   direction: left
         - keys:
             - action: { keyboardType: "全键" }
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               label: "中文"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
@@ -425,13 +420,12 @@ patch:
                   direction: down
             - action: { symbol: { char: "•" } }
             - action: enter
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               swipe:
                 - action: { shortcutCommand: "#换行" }
                   display: false
                   direction: up
+      buttonInsets: { left: 3, right: 3, top: 8, bottom: 4 }
     - name: "符号"
       rows:
         - keys:
@@ -500,9 +494,7 @@ patch:
                   direction: left
         - keys:
             - action: { keyboardType: "全键" }
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               label: "中文"
               swipe:
                 - action: { shortcutCommand: "#RimeSwitcher" }
@@ -520,22 +512,19 @@ patch:
                   direction: down
             - action: { symbol: { char: "•" } }
             - action: enter
-              width:
-                portrait: { percentage: 0.2 }
-                landscape: { percentage: 0.2 }
+              width: { percentage: 0.2 }
               swipe:
                 - action: { shortcutCommand: "#换行" }
                   display: false
                   direction: up
+      buttonInsets: { left: 3, right: 3, top: 8, bottom: 4 }
     - name: "计算器"
       rows:
         - keys:
             - action: { character: { char: "+" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
             - action: { character: { char: "-" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
             - action: { character: { char: "1" } }
               width: available
             - action: { character: { char: "2" } }
@@ -546,12 +535,10 @@ patch:
               width: available
         - keys:
             - action: { character: { char: "*" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
               label: "×"
             - action: { character: { char: "/" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
               label: "÷"
             - action: { character: { char: "4" } }
               width: available
@@ -563,11 +550,9 @@ patch:
               width: available
         - keys:
             - action: { character: { char: "(" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
             - action: { character: { char: ")" } }
-              width:
-                percentage: 0.1
+              width: { percentage: 0.1 }
             - action: { character: { char: "7" } }
               width: available
             - action: { character: { char: "8" } }
@@ -614,3 +599,4 @@ patch:
                 - action: { shortcutCommand: "#换行" }
                   display: false
                   direction: up
+      buttonInsets: { left: 3, right: 3, top: 8, bottom: 4 }
