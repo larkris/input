@@ -1,4 +1,7 @@
 patch:
+  # 方案说明
+  schema/name: 小鹤
+
   # 输入引擎
   engine/translators/+:
     - lua_translator@calc_translator  # 计算器
