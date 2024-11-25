@@ -4,7 +4,7 @@ patch:
 
   # 输入引擎
   engine/translators/+:
-    - lua_translator@calc_translator  # 计算器
+    - lua_translator@*calculator  # 计算器
 
   # 处理符合特定规则的输入码，如网址、反查
   recognizer/patterns/+:  # 再增加方案专有的：

@@ -4,7 +4,7 @@ patch:
 
   # 输入引擎
   engine/translators/+:
-    - lua_translator@calc_translator  # 计算器
+    - lua_translator@*calculator  # 计算器
 
   # 置顶候选项
   pin_cand_filter:
