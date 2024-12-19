@@ -149,8 +149,8 @@ patch:
   # 标点符号
   punctuator/symbols/+:
     # 度
-    'Vdu': [°, °C, °F]
-    'Vssd': [°C]
+    'Vdu': [°, ℃, ℉]
+    'Vssd': [℃]
     # π
     'Vpd': [π]
     'Vpi': [π]
