@@ -1,3 +1,10 @@
 patch:
   # 方案说明
   schema/name: 雾凇
+
+  # 标点符号
+  punctuator/symbols/+:
+    # 度
+    'vdu': [°, ℃, ℉]
+    'vssd': [℃]
+    'vhsd': [℉]
