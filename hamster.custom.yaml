@@ -8,6 +8,8 @@ patch:
     - "^.*SharedSupport.*$"
 
   # 工具栏
+  # 工具栏总高度
+  # toolbar/heightOfToolbar: 40
   # 是否显示候选文字 Comment 信息
   toolbar/displayCommentOfCandidate: true
 
@@ -23,6 +25,8 @@ patch:
   keyboard/enableNineGridOfNumericKeyboard: false
   # Shift状态锁定
   keyboard/lockShiftState: false
+  # 启动内嵌模式
+  # keyboard/enableEmbeddedInputMode: true
   # 设置符号光标居中
   keyboard/symbolsOfCursorBack/+:
     - "{}"
