@@ -50,14 +50,14 @@ patch:
   # 中文26键显示大写字符
   keyboard/showUppercasedCharacterOnChineseKeyboard: false
   # 字体样式
-  keyboard/style/fontFace:
+  # keyboard/style/fontFace:
     # 字体文件名
     # 字体请放在 Rime/Fonts 目录中，此处只需要填写字体的文件名称
     # 注意字体顺序，优先显示排序在前的字体，当显示的字符在字体中不存在时，则按顺序查找支持显示字符的字体
     # - url: "LXGWWenKaiScreen.ttf"
     # 字体名称可以用于引用系统已安装的字体，可通过以下网站查询字体名称
     # https://github.com/lionhylra/iOS-UIFont-Names
-    - name: "PingFangSC-Regular"
+    # - name: "PingFangSC-Regular"
   # 配色方案
   keyboard/colorSchemas:
     # __include: hamster_color_schemas:/colorSchemas
