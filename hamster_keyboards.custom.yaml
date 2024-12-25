@@ -555,6 +555,10 @@ patch:
               width: { percentage: 0.1 }
             - action: { character: { char: "7" } }
               width: available
+              swipe:
+                - action: { shortcutCommand: { sendKeys: { keys: "R" } } }
+                  # label: "R"
+                  direction: up
             - action: { character: { char: "8" } }
               width: available
             - action: { character: { char: "9" } }
@@ -584,6 +588,10 @@ patch:
                   direction: up
             - action: { character: { char: "0" } }
               width: available
+              swipe:
+                - action: { shortcutCommand: { sendKeys: { keys: "N" } } }
+                  # label: "N"
+                  direction: up
             - action: space
               width: available
               swipe:
