@@ -227,10 +227,8 @@ patch:
             - action: { character: { char: "m" } }
               swipe:
                 - action: { symbol: { char: "/" } }
-                  label: "’"
                   direction: up
                 - action: { symbol: { char: "?" } }
-                  label: "”"
                   direction: down
               callout:
                 - action: { character: { char: "?" } }
@@ -253,9 +251,12 @@ patch:
               width: { percentage: 0.2 }
               label: "123"
               swipe:
-                - action: { shortcutCommand: "#RimeSwitcher" }
+                - action: { shortcutCommand: "#clearSystemPasteboard" }
                   display: false
                   direction: up
+                - action: { shortcutCommand: "#RimeSwitcher" }
+                  display: false
+                  direction: right
             - action: { character: { char: "`" } }
               swipe:
                 - action: { shortcutCommand: { sendKeys: { keys: "uU" } } }
