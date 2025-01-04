@@ -274,6 +274,10 @@ patch:
               swipe:
                 - action: period
                   direction: up
+              callout:
+                - action: { character: { char: "?" } }
+                - action: { character: { char: '\' } }
+                - action: { character: { char: "!" } }
             - action: enter
               width: { percentage: 0.2 }
               swipe:
