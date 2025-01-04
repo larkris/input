@@ -1,4 +1,11 @@
 patch:
+  # 键盘皮肤配置
+  # 启用键盘皮肤
+  enableKeyboardSkins: false
+
+  # 键盘皮肤名称
+  keyboardSkinName: ""
+
   # 通用配置
   # icloud同步过滤规则
   general/regexOnCopyFile:
