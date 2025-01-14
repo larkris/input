@@ -2,9 +2,10 @@ patch:
   # 键盘皮肤配置
   # 启用键盘皮肤
   enableKeyboardSkins: false
-
   # 键盘皮肤名称
   keyboardSkinName: ""
+  # 是否显示脱字符，仅支持「键盘皮肤」
+  displayCaret: false
 
   # 通用配置
   # icloud同步过滤规则
