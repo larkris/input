@@ -160,7 +160,7 @@ patch:
   translator/preedit_format: []  # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
 
   # 标点符号
-  punctuator/digit_separators: ""
+  punctuator/digit_separator_action: commit
   punctuator/symbols/+:
     # 度
     'Vdu': [°, ℃, ℉]
