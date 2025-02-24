@@ -8,10 +8,8 @@ patch:
               swipe:
                 - action: { symbol: { char: "1" } }
                   direction: up
-                - action: { symbol: { char: "!" } }
+                - action: { character: { char: "!" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "！" } }
             - action: { character: { char: "w" } }
               swipe:
                 - action: { symbol: { char: "2" } }
@@ -33,10 +31,8 @@ patch:
               swipe:
                 - action: { symbol: { char: "4" } }
                   direction: up
-                - action: { symbol: { char: "$" } }
+                - action: { character: { char: "$" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "¥" } }
             - action: { character: { char: "t" } }
               swipe:
                 - action: { symbol: { char: "5" } }
@@ -44,17 +40,15 @@ patch:
                 - action: { symbol: { char: "%" } }
                   direction: down
               callout:
+                - action: { symbol: { char: "π" } }
                 - action: { symbol: { char: "℃" } }
                 - action: { symbol: { char: "°" } }
             - action: { character: { char: "y" } }
               swipe:
                 - action: { symbol: { char: "6" } }
                   direction: up
-                - action: { symbol: { char: "^" } }
+                - action: { character: { char: "^" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "……" } }
-                  label: "…"
             - action: { character: { char: "u" } }
               swipe:
                 - action: { symbol: { char: "7" } }
@@ -81,10 +75,9 @@ patch:
               swipe:
                 - action: { symbol: { char: "9" } }
                   direction: up
-                - action: { symbol: { char: "(" } }
+                - action: { character: { char: "(" } }
                   direction: down
               callout:
-                - action: { symbol: { char: "（" } }
                 - action: { symbol: { char: "ò" } }
                 - action: { symbol: { char: "ǒ" } }
                 - action: { symbol: { char: "ó" } }
@@ -93,10 +86,8 @@ patch:
               swipe:
                 - action: { symbol: { char: "0" } }
                   direction: up
-                - action: { symbol: { char: ")" } }
+                - action: { character: { char: ")" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "）" } }
         - keys:
             - action: none
               width: available
@@ -130,50 +121,34 @@ patch:
                   direction: down
             - action: { character: { char: "g" } }
               swipe:
-                - action: { symbol: { char: "[" } }
+                - action: { character: { char: "[" } }
                   direction: up
-                - action: { symbol: { char: "{" } }
+                - action: { character: { char: "{" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "「" } }
-                - action: { symbol: { char: "【" } }
             - action: { character: { char: "h" } }
               swipe:
-                - action: { symbol: { char: "]" } }
+                - action: { character: { char: "]" } }
                   direction: up
-                - action: { symbol: { char: "}" } }
+                - action: { character: { char: "}" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "」" } }
-                - action: { symbol: { char: "】" } }
             - action: { character: { char: "j" } }
               swipe:
-                - action: { symbol: { char: '\' } }
+                - action: { character: { char: '\' } }
                   direction: up
                 - action: { symbol: { char: "|" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "、" } }
             - action: { character: { char: "k" } }
               swipe:
-                - action: { symbol: { char: ";" } }
+                - action: { character: { char: ";" } }
                   direction: up
-                - action: { symbol: { char: ":" } }
+                - action: { character: { char: ":" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "：" } }
-                - action: { symbol: { char: "；" } }
             - action: { character: { char: "l" } }
               swipe:
-                - action: { symbol: { char: "'" } }
+                - action: { character: { char: "'" } }
                   direction: up
-                - action: { symbol: { char: '"' } }
+                - action: { character: { char: '"' } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "’"} }
-                - action: { symbol: { char: "‘" } }
-                - action: { symbol: { char: "”"} }
-                - action: { symbol: { char: "“" } }
             - action: none
               width: available
               processByRIME: false
@@ -215,26 +190,20 @@ patch:
               swipe:
                 - action: { symbol: { char: "," } }
                   direction: up
-                - action: { symbol: { char: "<" } }
+                - action: { character: { char: "<" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "《" } }
             - action: { character: { char: "n" } }
               swipe:
                 - action: { symbol: { char: "." } }
                   direction: up
-                - action: { symbol: { char: ">" } }
+                - action: { character: { char: ">" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "》" } }
             - action: { character: { char: "m" } }
               swipe:
                 - action: { symbol: { char: "/" } }
                   direction: up
-                - action: { symbol: { char: "?" } }
+                - action: { character: { char: "?" } }
                   direction: down
-              callout:
-                - action: { symbol: { char: "？" } }
             - action: none
               width: available
               processByRIME: false
@@ -278,10 +247,6 @@ patch:
               swipe:
                 - action: period
                   direction: up
-              callout:
-                - action: { symbol: { char: "！" } }
-                - action: { symbol: { char: "、" } }
-                - action: { symbol: { char: "？" } }
             - action: enter
               width: { percentage: 0.2 }
               swipe:

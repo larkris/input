@@ -2,7 +2,24 @@ patch:
   # 方案说明
   schema/name: 雾凇
 
+  # 开关
+  switches/+:
+    - name: prediction
+      states: [关闭预测, 开启预测]
+      # reset: 1
+
+  # 输入引擎
+  'engine/processors/@before 0': predictor
+  'engine/translators/@before 0': predict_translator
+
+  # 预测变量的配置项
+  predictor: 
+    db: predict.db
+    max_candidates: 8
+    max_iterations: 1
+
   # 标点符号
+  punctuator/digit_separator_action: commit
   punctuator/symbols/+:
     # 度
     'vdu': [°, ℃, ℉]
@@ -12,7 +29,7 @@ patch:
   # 语法模型
   grammar:
     language: amz-v3n2m1-zh-hans
-    collocation_max_length: 4
+    collocation_max_length: 5
     collocation_min_length: 2
   translator/contextual_suggestions: true
   translator/max_homophones: 7
