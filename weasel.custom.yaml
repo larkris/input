@@ -1,7 +1,6 @@
 patch:
-  # Update at: 2024.01.01
-  # 部分选项需要将 Weasel 更新至最新开发版才能生效
-  config_version: "2024.01.01"
+  # 部分选项需要将 Weasel 更新 16.0 及以上版本才能生效
+  config_version: "2024-09-25"
 
   # [app_options]
   # 针对特定应用的设置
@@ -26,8 +25,8 @@ patch:
 
   # [style]
   # 字体；候选项、候选窗口的行为、布局及样式
-  style/color_scheme: win_light                   # 默认配色方案
-  style/color_scheme_dark: win_dark               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+  style/color_scheme: wechat_light                   # 默认配色方案
+  style/color_scheme_dark: wechat_dark               # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
@@ -110,27 +109,27 @@ patch:
     candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
     # 背景设置
     back_color: 0xFFFFFF                    # 窗口背景
-    border_color: 0xDCDCDC                  # 窗口边框
+    border_color: 0xBEBEBE                  # 窗口边框
     # 激活候选项
-    hilited_label_color: 0xEEEEEE           # 序号文字
+    hilited_label_color: 0xFFFFFF           # 序号文字
     hilited_candidate_text_color: 0xFFFFFF  # 候选文字
-    hilited_candidate_back_color: 0x75B100  # 激活背景
+    hilited_candidate_back_color: 0x91C823  # 激活背景
     # 其它候选项
-    label_color: 0x999999                   # 序号文字
-    candidate_text_color: 0x545454          # 候选文字
+    label_color: 0xBBB0AA                   # 序号文字
+    candidate_text_color: 0x161616          # 候选文字
 
   preset_color_schemes/wechat_dark:
     name: "微信键盘深色"
     author: ""
     candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
     # 背景设置
-    back_color: 0x2E2925                    # 窗口背景
-    border_color: 0x444444                  # 窗口边框
+    back_color: 0x2B2B2B                    # 窗口背景
+    border_color: 0x595959                  # 窗口边框
     # 激活候选项
-    hilited_label_color: 0xEEEEEE           # 序号文字
+    hilited_label_color: 0xFFFFFF           # 序号文字
     hilited_candidate_text_color: 0xFFFFFF  # 候选文字
-    hilited_candidate_back_color: 0x75B100  # 激活背景
+    hilited_candidate_back_color: 0x91C823  # 激活背景
     # 其它候选项
-    label_color: 0x999999                   # 序号文字
-    candidate_text_color: 0xE9E9EA          # 候选文字
+    label_color: 0x6A6A6A                   # 序号文字
+    candidate_text_color: 0xEBEBEB          # 候选文字
   # [End of <preset_color_schemes>]
