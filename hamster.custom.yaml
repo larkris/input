@@ -1,9 +1,9 @@
 patch:
   # 键盘皮肤配置
   # 启用键盘皮肤
-  enableKeyboardSkins: false
+  enableKeyboardSkins: true
   # 键盘皮肤名称
-  keyboardSkinName: ""
+  keyboardSkinName: "微信绿"
   # 是否显示脱字符，仅支持「键盘皮肤」
   displayCaret: false
 
@@ -22,11 +22,6 @@ patch:
   toolbar/displayCommentOfCandidate: true
 
   # 键盘相关配置
-  # 使用键盘类型:
-  # chinese: 中文26键
-  # chineseNineGrid: 中文九宫格
-  # 自定义键盘填写自定义键盘配置中的 name 的值。如: `useKeyboardType: 大千注音`
-  keyboard/useKeyboardType: 全键
   # 启用按键声
   keyboard/enableKeySounds: false
   # 启用数字九宫格键盘
@@ -54,13 +49,13 @@ patch:
     - "''"
     - "‘’"
   # 空格按钮加载文字显示当前输入方案
-  keyboard/showCurrentInputSchemaNameOnLoadingTextForSpaceButton: true
+  # keyboard/showCurrentInputSchemaNameOnLoadingTextForSpaceButton: true
   # 中文26键显示大写字符
   keyboard/showUppercasedCharacterOnChineseKeyboard: false
   # 字体样式
   # keyboard/style/fontFace:
     # 字体文件名
-    # 字体请放在 Documents/Fonts 目录中，此处只需要填写字体的文件名称
+    # 字体请放在 Rime/Fonts 目录中，此处只需要填写字体的文件名称
     # 注意字体顺序，优先显示排序在前的字体，当显示的字符在字体中不存在时，则按顺序查找支持显示字符的字体
     # - url: "LXGWWenKaiScreen.ttf"
     # 字体名称可以用于引用系统已安装的字体，可通过以下网站查询字体名称
@@ -85,4 +80,4 @@ patch:
 
   # 自定义键盘布局
   keyboards:
-    __include: hamster_keyboards:/keyboards
+    # __include: hamster_keyboards:/keyboards
